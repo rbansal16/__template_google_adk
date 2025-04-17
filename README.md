@@ -18,35 +18,36 @@ This repository is built based on Google ADK (Agent Development Kit) tutorial. I
 ### Planned
 🔲 **Safety Guardrails with Callbacks**: Implementing before_model_callback and before_tool_callback to inspect, modify, or block requests/tool usage based on predefined rules, enhancing application safety and control.
 
-## System Architecture
+## Agent Architecture
 
 ```mermaid
 graph TD
-    subgraph Core Components
-        A[Root Agent] --> B[Agent Manager]
-        B --> C[Sub-Agents Pool]
-        A --> D[Shared Libraries]
-        A --> E[Tool Manager]
+    subgraph "Root Agent (Weather Agent)"
+        A[Weather Agent] --> B[get_weather Tool]
+        A --> C[Sub-Agent Management]
     end
     
-    subgraph External Services
-        F[Google ADK]
-        G[MCP Client]
-        H[Redis Cache]
+    subgraph "Specialized Sub-Agents"
+        D[Greetings Agent]
+        E[Farewell Agent]
     end
     
-    subgraph Tools Layer
-        I[Root Tools]
-        J[Shared Tools]
-        K[Sub-Agent Tools]
+    subgraph "Sub-Agent Tools"
+        F[say_hello Tool]
+        G[say_goodbye Tool]
     end
     
-    A --> F
-    A --> G
-    B --> H
-    E --> I
-    E --> J
-    E --> K
+    C --> D
+    C --> E
+    D --> F
+    E --> G
+    
+    style A fill:#f96,stroke:#333,stroke-width:4px
+    style D fill:#9cf,stroke:#333,stroke-width:2px
+    style E fill:#9cf,stroke:#333,stroke-width:2px
+    style B fill:#9f9,stroke:#333,stroke-width:2px
+    style F fill:#9f9,stroke:#333,stroke-width:2px
+    style G fill:#9f9,stroke:#333,stroke-width:2px
 ```
 
 ## Setup
