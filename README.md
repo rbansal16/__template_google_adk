@@ -1,6 +1,6 @@
 # Google ADK Multi-Agent Service
 
-This repository is built based on Google ADK (Agent Development Kit) tutorial. It implements a multi-agent service with centralized logging and MCP client integration for tool interactions.
+This repository is built based on Google ADK (Agent Development Kit) tutorial. It implements a multi-agent service with centralized logging and MCP client integration for tool interactions. Developed by [BansalAI](https://www.bansalai.com) - Your partner for enterprise AI solutions.
 
 ## Features
 
@@ -63,9 +63,9 @@ cd __template_google_adk
 pip install -r requirements.txt
 ```
 
-3. Copy `.env.example` to `.env` and fill in your API keys and config values
+3. Copy `.env-example` to `.env` and fill in your API keys and config values
 ```bash
-cp .env.example .env
+cp .env-example .env
 # Edit .env with your preferred editor
 ```
 
@@ -89,7 +89,7 @@ python -m agent.agent
 │       └── logging_config.py  # Centralized logging
 ├── app.py                # Application entry point with session state
 ├── call_agent_async.py   # Utility for async agent calls
-├── .env                  # Environment variables (create from .env.example)
+├── .env                  # Environment variables (create from .env-example)
 └── requirements.txt      # Dependencies
 ```
 
@@ -143,6 +143,21 @@ The repository implements a multi-agent system where:
 3. **Farewell Agent**: Handles user farewells
 4. **Weather Agent**: Provides weather information for specific cities
 
+## Enterprise Support
+
+Need help implementing AI agents for your business? [BansalAI](https://www.bansalai.com) provides expert consulting services for:
+
+- Custom agent development
+- LLM integration and fine-tuning
+- Enterprise-grade AI solutions
+- Training and support
+
+Visit [www.bansalai.com](https://www.bansalai.com) to learn how we can transform your business with AI.
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. 
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+Developed and maintained by [BansalAI](https://www.bansalai.com) | [Contact Us](https://www.bansalai.com/contact) 
