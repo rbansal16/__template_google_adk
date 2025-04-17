@@ -2,7 +2,7 @@
 
 This repository is built based on Google ADK (Agent Development Kit) tutorial. It implements a multi-agent service with centralized logging. 
 
-Developed by [BansalAI](https://www.bansalai.com) - Your partner for enterprise AI solutions.
+Developed by [BansalAI](https://bansalai.com) - Your partner for enterprise AI solutions.
 
 ## Features
 
