@@ -1,6 +1,8 @@
 # Google ADK Multi-Agent Service
 
-This repository is built based on Google ADK (Agent Development Kit) tutorial. It implements a multi-agent service with centralized logging and MCP client integration for tool interactions. Developed by [BansalAI](https://www.bansalai.com) - Your partner for enterprise AI solutions.
+This repository is built based on Google ADK (Agent Development Kit) tutorial. It implements a multi-agent service with centralized logging. 
+
+Developed by [BansalAI](https://www.bansalai.com) - Your partner for enterprise AI solutions.
 
 ## Features
 
@@ -17,6 +19,13 @@ This repository is built based on Google ADK (Agent Development Kit) tutorial. I
 
 ### Planned
 🔲 **Safety Guardrails with Callbacks**: Implementing before_model_callback and before_tool_callback to inspect, modify, or block requests/tool usage based on predefined rules, enhancing application safety and control.
+
+🔲 **Persistent Storage with SQLite**: Implementing SQLite database for storing conversation history, user preferences, and agent states, enabling data persistence across sessions and application restarts.
+
+- Stores conversation history for context retention
+- Maintains user preferences and settings
+- Persists agent states and configurationsl
+
 
 ## Agent Architecture
 
