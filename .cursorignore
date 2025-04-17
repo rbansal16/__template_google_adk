@@ -1,0 +1,50 @@
+# Ignore all byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore environment directories
+env/
+venv/
+
+# Ignore build directories
+dist/
+build/
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
+
+# Ignore test directories
+tests/
+
+# Ignore deployment configurations
+deployment/
+
+# Ignore evaluation scripts
+eval/
+
+# Ignore unit test results
+*.cover
+.coverage
+.coverage.*
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore mypy cache
+.mypy_cache/
+
+# Ignore pytype cache
+.pytype/
+
+# Ignore pyre cache
+.pyre/
+
+# Ignore Cython debug symbols
+cython_debug/ 
